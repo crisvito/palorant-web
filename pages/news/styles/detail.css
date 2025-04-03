@@ -2,6 +2,13 @@
   color: red;
 }
 
+p,
+h2,
+h3,
+li {
+  color: black;
+}
+
 .page {
   background-color: rgb(236, 232, 225);
 }

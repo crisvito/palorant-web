@@ -13,10 +13,18 @@
         <div class="navbar-left">
           <a class="logo">palorant</a>
           <ul class="navbar-links">
-            <li id="home"><a href=".">home</a></li>
-            <li id="agents"><a href="./pages/agents/index.html">agents</a></li>
-            <li id="maps"><a href="./pages/maps/index.html">maps</a></li>
-            <li id="news"><a href="./pages/news/index.html">news</a></li>
+            <li id="home">
+              <a href=".">home</a>
+            </li>
+            <li id="agents">
+              <a href="./pages/agents/index.html">agents</a>
+            </li>
+            <li id="maps">
+              <a href="./pages/maps/index.html">maps</a>
+            </li>
+            <li id="news">
+              <a href="./pages/news/index.html">news</a>
+            </li>
           </ul>
         </div>
         <div class="navbar-right">
@@ -27,44 +35,90 @@
 
     <div class="content">
       <div class="home page">
-        <video src="./assets/videos/test.mp4" alt="" autoplay loop></video>
+        <video
+          class="banner-video"
+          src="./assets/videos/test.mp4"
+          alt=""
+          autoplay
+          loop
+        ></video>
         <div class="home-content">
-          <h1 class="home-title">The Fight<br />Is On</h1>
-          <p class="season-info">
-            Get radical with TMNT in Season 02 Reloaded for<br />
-            Call of Duty: Warzone, Multiplayer, and Zombies
-          </p>
-          <a href="#" class="learn-more">Learn More</a>
+          <h1 class="home-title">The Fight Is On</h1>
+          <div class="home-subtitle">
+            <p class="home-small-title">
+              A 5v5 team-based tactical shooter with immersive gameplay
+            </p>
+            <a href="#news-page" class="scroll-more">scroll for more</a>
+          </div>
         </div>
       </div>
 
-      <div class="news page">
+      <div id="news-page" class="news page">
         <h2 class="title-page">news</h2>
         <div class="news-container">
-          <aside class="news-sidebar">
-            <img src="./assets/imgs/news/2_updateGame.png" alt="" />
+          <a
+            class="news-sidebar"
+            href="./pages/news/detail/april-mop-pengenalan-smite-2/index.html"
+          >
+            <div class="img-news">
+              <img src="./assets/imgs/news/1_updateGame.png" alt="" />
+            </div>
             <div class="news-desc">
-              <span>Spektrum warna: Art bertema Waylay dari komunitas</span>
-              <h3>BLACKCELL</h3>
+              <h3>April Mop: Pengenalan Smite 2</h3>
               <p>
-                Inilah Waylay dalam 13 kreasi yang berbeda dengan jutaan warna
+                Ya, kali ini sungguhan. Skin terbaik kembali dengan tampilan
+                yang lebih baik dari sebelumnya.
               </p>
             </div>
-          </aside>
+          </a>
 
           <div class="main-news">
-            <div class="main-news-item">
-              <img src="./assets/imgs/news/4_esports.png" alt="Patch Notes" />
-              <a href="#">Black Ops 6 Season 02 Patch Notes</a>
-            </div>
-            <div class="main-news-item">
-              <img src="./assets/imgs/news/1_esports.png" alt="" />
-              <a href="#">Call of Duty: Warzone Season 02 Patch Notes</a>
-            </div>
-            <div class="main-news-item">
-              <img src="./assets/imgs/news/1_esports.png" alt="" />
-              <a href="#">Call of Duty: Warzone Season 02 Patch Notes</a>
-            </div>
+            <a
+              class="main-news-item"
+              href="./pages/news/detail/catatan-patch-valorant-10-06/index.html"
+            >
+              <div class="main-img-news">
+                <img
+                  src="./assets/imgs/news/2_updateGame.png"
+                  alt="Patch Notes"
+                />
+              </div>
+              <div class="main-desc-news">
+                <h3>Catatan Patch VALORANT 10.06</h3>
+                <p>Mekanik dan buff baru KAY/O, serta banyak perbaikan bug.</p>
+              </div>
+            </a>
+            <a
+              class="main-news-item"
+              href="./pages/news/detail/catatan-patch-valorant-10-05/index.html"
+            >
+              <div class="main-img-news">
+                <img src="./assets/imgs/news/3_updateGame.png" alt="" />
+              </div>
+              <div class="main-desc-news">
+                <h3>Catatan Patch VALORANT 10.05</h3>
+                <p>
+                  Patch kecil dengan pembaruan kejelasan minimap dan perbaikan
+                  bug.
+                </p>
+              </div>
+            </a>
+
+            <a
+              class="main-news-item"
+              href="./pages/news/detail/catatan-patch-valorant-10-04/"
+            >
+              <div class="main-img-news">
+                <img src="./assets/imgs/news/4_updateGame.png" alt="" />
+              </div>
+              <div class="main-desc-news">
+                <h3>Catatan Patch VALORANT 10.04</h3>
+                <p>
+                  Duelist Baru: Waylay, pembaruan besar untuk berbagai Agen,
+                  rotasi peta baru, pembaruan untuk Ascent, dan banyak lagi.
+                </p>
+              </div>
+            </a>
             <div class="news-button">
               <a href="./pages/news/index.html" class="button-more more-news">
                 GET MORE NEWS
@@ -74,7 +128,7 @@
         </div>
       </div>
 
-      <div class="agents page">
+      <div id="agents-page" class="agents page">
         <h2 class="title-page">AGEN</h2>
         <div class="agents-cards">
           <div class="agent-card">

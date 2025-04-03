@@ -17,12 +17,6 @@ img {
   background-color: rgb(236, 232, 225);
 }
 
-.news-container p,
-h2,
-h3 {
-  color: black;
-}
-
 .news-container h2 {
   font-weight: 900;
   letter-spacing: 1px;
