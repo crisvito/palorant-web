@@ -6,11 +6,17 @@ p,
 h2,
 h3,
 li {
-  color: black;
+  color: white;
+}
+
+h2 {
+  letter-spacing: var(--smallest_size);
+  font-size: var(--super_size);
+  font-weight: 900;
 }
 
 .page {
-  background-color: rgb(236, 232, 225);
+  background-color: rgb(15, 25, 35);
 }
 
 .detail-agent-container {
@@ -27,6 +33,90 @@ li {
   width: 100%;
 }
 
+.agent-desc {
+  display: flex;
+  flex-direction: column;
+  gap: var(--normal_size);
+}
+
+.agent-desc P {
+  word-spacing: var(--smallest_size);
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.role-text {
+  font-weight: 700;
+  color: red;
+}
+
+.agent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.agent-role {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: var(--medium_size);
+}
+
+.agent-role img {
+  width: var(--super_size);
+  height: auto;
+}
+
+.agent-role p {
+  font-weight: 700;
+}
+
 .agent-detail {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--super_size);
+}
+
+.abilities-video {
+  width: 100%;
+  border-radius: var(--tiny_size);
+  overflow: hidden;
+}
+
+.abilities-video video {
+  width: 100%;
+  border-radius: var(--tiny_size);
+}
+
+.agent-abilities {
+  align-self: center;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--largest_size);
+  align-items: center;
+}
+
+.abilities-detail {
+  width: 100%;
+}
+
+.abilities-img {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--super_size);
+}
+
+.img-detail {
+  width: 55px;
+  height: auto;
+  cursor: pointer;
+}
+
+.img-detail img {
+  width: 100%;
+  height: auto;
 }
