@@ -1,0 +1,32 @@
+#agents a {
+  color: red;
+}
+
+p,
+h2,
+h3,
+li {
+  color: black;
+}
+
+.page {
+  background-color: rgb(236, 232, 225);
+}
+
+.detail-agent-container {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.agent-img {
+  width: 50%;
+}
+
+.agent-img img {
+  width: 100%;
+}
+
+.agent-detail {
+  width: 50%;
+}

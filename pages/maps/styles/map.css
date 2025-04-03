@@ -1,3 +1,101 @@
 #maps a {
   color: red;
 }
+
+.page {
+  background-color: rgb(236, 232, 225);
+}
+
+.maps-container p,
+h2,
+h3 {
+  color: black;
+}
+
+.maps-container {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--super_size);
+  margin-bottom: 50px;
+}
+
+.maps-container h2 {
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: var(--super_size);
+  text-align: center;
+}
+
+.maps-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--super_size);
+}
+
+.left-maps-item,
+.right-maps-item {
+  width: 100%;
+  display: flex;
+  gap: var(--normal_size);
+  align-items: center;
+  cursor: pointer;
+}
+
+.left-maps-item {
+  flex-direction: row;
+}
+
+.right-maps-item {
+  flex-direction: row-reverse;
+}
+
+.left-maps-item img,
+.right-maps-item img {
+  border-radius: var(--tiny_size);
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.left-maps-item .map-desc h3 {
+  text-align: end;
+}
+
+.map-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.map-desc {
+  width: 100%;
+  text-align: justify;
+}
+
+.map-desc h3 {
+  font-size: var(--largest_size);
+}
+
+.maps-title {
+  display: flex;
+  align-items: center;
+  gap: var(--large_size);
+}
+
+.maps-title::before,
+.maps-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, black, transparent);
+}
+
+.maps-title::before {
+  background: linear-gradient(to left, black, transparent);
+}
+
+.left-maps-item:hover img,
+.right-maps-item:hover img {
+  transform: scale(1.1);
+}

@@ -1,0 +1,25 @@
+.detail-news-container p,
+h2,
+h3,
+h4,
+li {
+  color: black;
+}
+
+.detail-body ul {
+  padding-left: 20px;
+}
+
+.detail-body ul ul {
+  padding-left: 20px;
+}
+
+.detail-body ul li::marker {
+  content: "• ";
+}
+
+.text-bold {
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+}

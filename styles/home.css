@@ -2,7 +2,6 @@
   color: red;
 }
 /* UTILITIES */
-
 .title-page {
   font-size: calc(var(--large_size) * 2);
   font-weight: 900;
