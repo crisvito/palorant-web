@@ -11,20 +11,17 @@
     <nav class="header">
       <div class="navbar">
         <div class="navbar-left">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <a class="logo">palorant</a>
           <ul class="navbar-links">
-            <li id="home">
-              <a href=".">home</a>
-            </li>
-            <li id="agents">
-              <a href="./pages/agents/index.html">agents</a>
-            </li>
-            <li id="maps">
-              <a href="./pages/maps/index.html">maps</a>
-            </li>
-            <li id="news">
-              <a href="./pages/news/index.html">news</a>
-            </li>
+            <li id="home"><a href=".">home</a></li>
+            <li id="agents"><a href="./pages/agents/index.html">agents</a></li>
+            <li id="maps"><a href="./pages/maps/index.html">maps</a></li>
+            <li id="news"><a href="./pages/news/index.html">news</a></li>
           </ul>
         </div>
         <div class="navbar-right">
@@ -58,67 +55,71 @@
         <div class="news-container">
           <a
             class="news-sidebar"
-            href="./pages/news/detail/april-mop-pengenalan-smite-2/index.html"
+            href="./pages/news/detail/catatan-patch-valorant-10-04/index.html"
           >
             <div class="img-news">
-              <img src="./assets/imgs/news/1_updateGame.png" alt="" />
+              <img src="./assets/imgs/news/4_updateGame.png" alt="" />
             </div>
-            <div class="news-desc">
-              <h3>April Mop: Pengenalan Smite 2</h3>
+            <div class="news-desc overlay">
+              <h3>Catatan Patch VALORANT 10.04</h3>
               <p>
-                Ya, kali ini sungguhan. Skin terbaik kembali dengan tampilan
-                yang lebih baik dari sebelumnya.
+                Duelist Baru: Waylay, pembaruan besar untuk berbagai Agen,
+                rotasi peta baru, pembaruan untuk Ascent, dan banyak lagi.
               </p>
             </div>
           </a>
 
           <div class="main-news">
-            <a
-              class="main-news-item"
-              href="./pages/news/detail/catatan-patch-valorant-10-06/index.html"
-            >
-              <div class="main-img-news">
-                <img
-                  src="./assets/imgs/news/2_updateGame.png"
-                  alt="Patch Notes"
-                />
-              </div>
-              <div class="main-desc-news">
-                <h3>Catatan Patch VALORANT 10.06</h3>
-                <p>Mekanik dan buff baru KAY/O, serta banyak perbaikan bug.</p>
-              </div>
-            </a>
-            <a
-              class="main-news-item"
-              href="./pages/news/detail/catatan-patch-valorant-10-05/index.html"
-            >
-              <div class="main-img-news">
-                <img src="./assets/imgs/news/3_updateGame.png" alt="" />
-              </div>
-              <div class="main-desc-news">
-                <h3>Catatan Patch VALORANT 10.05</h3>
-                <p>
-                  Patch kecil dengan pembaruan kejelasan minimap dan perbaikan
-                  bug.
-                </p>
-              </div>
-            </a>
+            <div class="news-item">
+              <a
+                class="main-news-item"
+                href="./pages/news/detail/catatan-patch-valorant-10-06/index.html"
+              >
+                <div class="main-img-news">
+                  <img
+                    src="./assets/imgs/news/2_updateGame.png"
+                    alt="Patch Notes"
+                  />
+                </div>
+                <div class="main-desc-news">
+                  <h3>Catatan Patch VALORANT 10.06</h3>
+                  <p>
+                    Mekanik dan buff baru KAY/O, serta banyak perbaikan bug.
+                  </p>
+                </div>
+              </a>
+              <a
+                class="main-news-item"
+                href="./pages/news/detail/catatan-patch-valorant-10-05/index.html"
+              >
+                <div class="main-img-news">
+                  <img src="./assets/imgs/news/3_updateGame.png" alt="" />
+                </div>
+                <div class="main-desc-news">
+                  <h3>Catatan Patch VALORANT 10.05</h3>
+                  <p>
+                    Patch kecil dengan pembaruan kejelasan minimap dan perbaikan
+                    bug.
+                  </p>
+                </div>
+              </a>
 
-            <a
-              class="main-news-item"
-              href="./pages/news/detail/catatan-patch-valorant-10-04/"
-            >
-              <div class="main-img-news">
-                <img src="./assets/imgs/news/4_updateGame.png" alt="" />
-              </div>
-              <div class="main-desc-news">
-                <h3>Catatan Patch VALORANT 10.04</h3>
-                <p>
-                  Duelist Baru: Waylay, pembaruan besar untuk berbagai Agen,
-                  rotasi peta baru, pembaruan untuk Ascent, dan banyak lagi.
-                </p>
-              </div>
-            </a>
+              <a
+                class="main-news-item"
+                href="./pages/news/detail/april-mop-pengenalan-smite-2/index.html"
+              >
+                <div class="main-img-news">
+                  <img src="./assets/imgs/news/1_updateGame.png" alt="" />
+                </div>
+                <div class="main-desc-news">
+                  <h3>April Mop: Pengenalan Smite 2</h3>
+                  <p>
+                    Ya, kali ini sungguhan. Skin terbaik kembali dengan tampilan
+                    yang lebih baik dari sebelumnya.
+                  </p>
+                </div>
+              </a>
+            </div>
             <div class="news-button">
               <a href="./pages/news/index.html" class="button-more more-news">
                 GET MORE NEWS
@@ -133,23 +134,23 @@
         <div class="agents-cards">
           <div class="agent-card">
             <div class="agent-card-image">
-              <img src="./assets/imgs/agents/breach.png" alt="" />
+              <img src="./assets/imgs/agents/jetti/jetti.png" alt="" />
             </div>
-            <h3 class="agent-name">breach</h3>
+            <h3 class="agent-name">JETTI</h3>
           </div>
 
           <div class="agent-card">
             <div class="agent-card-image">
-              <img src="./assets/imgs/agents/Brimstone.png" alt="" />
+              <img src="./assets/imgs/agents/ohmenn/ohmenn.png" alt="" />
             </div>
-            <h3 class="agent-name">brimstone</h3>
+            <h3 class="agent-name">OHMENN</h3>
           </div>
 
           <div class="agent-card">
             <div class="agent-card-image">
-              <img src="./assets/imgs/agents/Cypher.png" alt="" />
+              <img src="./assets/imgs/agents/phanax/phanax.png" alt="" />
             </div>
-            <h3 class="agent-name">chyper</h3>
+            <h3 class="agent-name">PHANAX</h3>
           </div>
         </div>
         <a href="./pages/agents/index.html" class="button-more more-agents">
@@ -163,17 +164,17 @@
           <div class="maps-caraousel-container">
             <div class="maps-carousel">
               <img
-                class="icebox"
+                class="maps-carousel-item icebox"
                 src="./assets/imgs/maps/icebox/icebox.png"
                 alt=""
               />
               <img
-                class="split"
+                class="maps-carousel-item split"
                 src="./assets/imgs/maps/split/split.png"
                 alt=""
               />
               <img
-                class="lotus"
+                class="maps-carousel-item lotus"
                 src="./assets/imgs/maps/lotus/lotus.png"
                 alt=""
               />
@@ -214,5 +215,7 @@
       </div>
     </footer>
   </body>
+
   <script src="./scripts/script.js"></script>
+  <script src="./scripts/navbar.js"></script>
 </html>

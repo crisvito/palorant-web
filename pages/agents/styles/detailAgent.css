@@ -110,6 +110,21 @@ h2 {
   gap: var(--super_size);
 }
 
+.abilities-desc {
+  text-align: center;
+}
+
+.abilities-desc h3 {
+  line-height: 1.5;
+  font-size: var(--super_size);
+  letter-spacing: 1px;
+}
+
+.abilities-desc p {
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
 .img-detail {
   width: 55px;
   height: auto;
@@ -119,4 +134,9 @@ h2 {
 .img-detail img {
   width: 100%;
   height: auto;
+  opacity: 0.5;
+}
+
+.active img {
+  opacity: 1;
 }

@@ -5,6 +5,7 @@
 p,
 h2,
 h3,
+h4,
 li {
   color: black;
 }
@@ -57,4 +58,27 @@ li {
   display: flex;
   flex-direction: column;
   gap: var(--largest_size);
+}
+
+.line {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.detail-body ul {
+  padding-left: 20px;
+}
+
+.detail-body ul ul {
+  padding-left: 20px;
+}
+
+.detail-body ul li::marker {
+  content: "• ";
+}
+
+.text-bold {
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
 }

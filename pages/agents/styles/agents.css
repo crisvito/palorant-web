@@ -33,6 +33,7 @@ h3 {
 }
 
 .agents-item {
+  width: 100%;
   background-color: rgb(26, 26, 46);
   border-radius: var(--tiny_size);
   overflow: hidden;
@@ -45,8 +46,8 @@ h3 {
 }
 
 .agents-item img {
+  display: block;
   width: 100%;
-  height: auto;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
@@ -56,6 +57,7 @@ h3 {
   padding-block: var(--large_size);
   font-weight: bold;
   text-align: center;
+  border-top: 2px solid black;
 }
 
 .agents-item:hover img {

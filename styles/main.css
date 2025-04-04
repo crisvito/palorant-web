@@ -95,6 +95,7 @@ body {
 
 .navbar-left {
   display: flex;
+  align-items: center;
   gap: var(--super_size);
 }
 
@@ -112,6 +113,12 @@ body {
   font-size: 24px;
 }
 
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: var(--super_size);
+}
+
 .report-button {
   border-style: none;
   background-color: rgb(255, 70, 85);
@@ -120,6 +127,20 @@ body {
   text-transform: uppercase;
   padding-inline: var(--large_size);
   padding-block: var(--small_size);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 4px;
+  background: white;
+  transition: 0.3s;
 }
 
 /* FOOTER */
@@ -167,4 +188,73 @@ body {
   display: flex;
   justify-content: center;
   gap: var(--largest_size);
+}
+
+@media (max-width: 1024px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    position: fixed;
+    padding: var(--super_size);
+    top: 60px;
+    left: 0;
+    background-color: rgba(1, 1, 1, 0.7);
+    -webkit-backdrop-filter: blur(var(--medium_size));
+    backdrop-filter: blur(var(--medium_size));
+  }
+
+  .navbar-links.show {
+    width: 40vw;
+    display: flex;
+    gap: var(--largest_size);
+    background-color: rgba(1, 1, 1, 0.7);
+    -webkit-backdrop-filter: blur(var(--medium_size));
+    backdrop-filter: blur(var(--medium_size));
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Efek animasi hamburger berubah jadi X */
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-inline: var(--super_size);
+  }
+  .page {
+    padding-inline: var(--super_size);
+  }
+  .navbar-links.show {
+    width: 100%;
+  }
+  .report-button {
+    padding-block: var(--smallest_size);
+    padding-inline: var(--normal_size);
+  }
+  .navbar-left {
+    gap: var(--normal_size);
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding-inline: var(--largest_size);
+  }
+  .page {
+    padding-inline: var(--largest_size);
+  }
 }
